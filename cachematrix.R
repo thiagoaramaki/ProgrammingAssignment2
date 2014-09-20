@@ -57,6 +57,8 @@ cacheMatrix <- function(x, ...) {
   m
 }
 
+## This function verify if the matrix, y, is the inverted matrix of matrix x,
+## using the relation A^-1*A=I, where I is the identity matrix
 checkInversa <- function(x=matrix, y=matrix) {
   mul <- x%*%y
   i <- diag(nrow(x))
